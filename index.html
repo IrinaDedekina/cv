@@ -1,73 +1,101 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Резюме</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <title>Резюме</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; border-radius: 100px; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 28px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+     </style>
 </head>
+
 <body>
 
-<div>
-  <h1>Дедекина Ирина Александровна</h1>
-  <p>Женщина, 28 лет, родилась 6 сентября 1992</p>
-  <img src="irina.jpg" alt="Фото" width="200" height="200">
-</div>
+  <div id="page-wrap">
+    <img src="images/irina.jpg" alt="Photo of Cthulu" id="pic" />
+      <div id="contact-info" class="vcard">
+        <h1 class="fn">Дедекина Ирина Александровна</h1>
+          <p>
+            Телефон: <span class="tel">+7 977-867-67-74</span><br />
+            Email: <a class="email" href="mailto:dedekina92@yandex.ru">dedekina92@yandex.ru</a>
+          </p>
+      </div>
 
-<div class="column">
-  <h4>Контакты</h4>
-  <ul>
-    <li>тел: <a href="tel:+79778676774">+7(977)867-67-74</a></li>
-    <li>email: <a href="mailto:dedekina92@yandex.ru">dedekina92@yandex.ru</a></li>
-  </ul>
-</div>
+      <div id="objective">
+        <ul>
+          <li>Разработчик Ruby on Rails</li>
+          <li>Занятость: полная занятость</li>
+          <li>График работы: полный день</li>
+        </ul>
+      </div>
 
-<div>
-  <div class="right_div"></div>
-  <h4>Желаемая должность</h4>
-  <ul>
-    <li>Разработчик Ruby on Rails</li>
-    <li>Занятость: полная занятость</li>
-    <li>График работы: полный день</li>
-  </ul>
-</div>
+      <div class="clear"></div>
 
-<div>
-  <h4>Образование</h4>
-  <div>
-    <ul>
-      <li>Высшее образование (Бакалавр). ФГБОУ ВПО МАМИ. Специальность по образованию: экономика. Дата окончания: 2015 г.</li>
-      <li>Онлайн интенсив Ruby on Rails: <a href="http://goodprogrammer.ru">Хороший программист</a>. Дата окончания: 2021 г.</li>
-    </ul>
+      <dl>
+        <dd class="clear"></dd>
+
+        <dt>Образование</dt>
+        <dd>
+          <ul>
+              <li>Высшее образование (Бакалавр). ФГБОУ ВПО МАМИ. Специальность по образованию: экономика. Дата окончания: 2015 г.</li>
+              <li>Онлайн интенсив Ruby on Rails: <a href="http://goodprogrammer.ru">Хороший программист</a>. Дата окончания: 2021 г.</li>
+          </ul>
+        </dd>
+
+        <dd class="clear"></dd>
+
+        <dt>Навыки</dt>
+        <dd>
+          <ul>
+            <li>Ruby</li>
+            <li>Базовые знания HTML и CSS</li>
+            <li>Ruby on Rails</li>
+            <li>Отправка писем через mailjet</li>
+            <li>Тестирование кода с помощью Rspec и FactoryBot</li>
+            <li>Деплой на Heroku и VPS (в том числе с помощью capistrano)</li>
+            <li>Локализация i18n</li>
+            <li>Базовые знания SQL</li>
+            <li>Использование системы контроля версий - Git</li>
+
+          </ul>
+        </dd>
+
+        <dd class="clear"></dd>
+
+        <dt>Места работы</dt>
+        <dd>
+          <ul>
+            <li><b>Июль 2018 — октябрь 2020</b> ИП Андронова Ирина Борисовна. Специалист договорного отдела</li>
+            <li><b>Июнь 2016 — Февраль 2017</b> РОУ "МДПК "Сигнал-01". Специалист договорного отдела</li>
+            <li><b>Ноябрь 2015 — Май 2016</b> ООО "Арт Продакшн". Финансовый координатор</li>
+            <li><b>Сентябрь 2011 — Март 2012</b> ЗАО "Связной Логистика". Специалист по продаже страховых услуг</li>
+            <li><b>Март 2012 — Октябрь 2015</b> ООО "Гало плюс". Администратор</li>
+          </ul>
+        </dd>
+
+        <dd class="clear"></dd>
+      </dl>
+      <div class="clear"></div>
   </div>
-</div>
-
-<div class="border">
-  <h4>Навыки</h4>
-  <ul>
-    <li>Ruby</li>
-    <li>Ruby on Rails</li>
-    <li>HTML</li>
-    <li>CSS</li>
-  </ul>
-</div>
-
-<div>
-  <h4>Места работы</h4>
-  <div>
-    <ul>
-      <li><b>Июль 2018 — октябрь 2020</b> ИП Андронова Ирина Борисовна. Специалист договорного отдела</li>
-      <li><b>Июнь 2016 — Февраль 2017</b> РОУ "МДПК "Сигнал-01". Специалист договорного отдела</li>
-      <li><b>Ноябрь 2015 — Май 2016</b> ООО "Арт Продакшн". Финансовый координатор</li>
-      <li><b>Сентябрь 2011 — Март 2012</b> ЗАО "Связной Логистика". Специалист по продаже страховых услуг</li>
-      <li><b>Март 2012 — Октябрь 2015</b> ООО "Гало плюс". Администратор</li>
-    </ul>
-  </div>
-</div>
-
 </body>
 </html>
